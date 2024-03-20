@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Conta</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="/imagens/logo-in.png">
+</head>
+<body class="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-azul_claro to-azul_escuro font-epilogue">
+    <form action="" class="bg-fundo w-[90%] h-[90%] flex items-center justify-center flex-col rounded-3xl">
+        <div class="w-[80%] h-[80%] px-12 py-4 bg">
+            <div>
+                <h1 class="font-black text-3xl mb-8 after:block after:w-16 after:h-1 after:bg-blue-500 after:mx-auto after:absolute after:rounded-full">Criar uma Conta</h1>
+            </div>
+            <div class="flex flex-wrap justify-between py-4">
+                <div class="input-box">
+                    <label for="firstname">Nome</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Insira o seu nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Insira o seu Sobrenome">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Insira o seu email" required>
+                </div>
+                <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input type="tel" id="number" name="number" placeholder="xx xxx xxxx" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Crie a sua senha" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Confirme sua senha</label>
+                    <input type="password" id="confirmpassword" name="password" placeholder="Confirme sua senha" required>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4 class="font-bold">Genero</h4>
+                </div>
+                <div class="flex justify-between font-semibold">
+                    <div class="genero-input">
+                        <input type="radio" id="male" name="genero">
+                        <label for="male">Masculino</label>
+                    </div>
+                    
+                    <div class="genero-input">
+                        <input type="radio" id="female" name="genero">
+                        <label for="female">Femenino</label>
+                    </div>
+                    
+                    <div class="genero-input">
+                        <input type="radio" id="others" name="genero">
+                        <label for="others">Outros</label>
+                    </div>
+                    
+                    <div class="genero-input">
+                        <input type="radio" id="none" name="genero">
+                        <label for="nome">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full">
+                <button onclick="window.open('course.html')" class="text-base w-1/2 mt-6  text-white rounded-lg h-8 bg-gradient-to-r from-azul_escuro to-azul_claro hover:bg-blue-800 ">Continuar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

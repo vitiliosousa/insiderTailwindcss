@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+.btn-landing{
+    @apply  w-1/2 m-4 bg-gradient-to-r from-azul_claro to-azul_escuro hover:bg-blue-800 transition-colors 
+    py-2 rounded-lg text-white tracking-wide shadow;
+    }
+.input-login{
+    @apply w-full py-3 box-border px-4 rounded-lg shadow-lg border border-gray-200 mb-2;
+}
+.input-box{
+    @apply flex flex-col mb-4;
+}
+.input-box input{
+    @apply my-2 py-3 px-10 border-none rounded-lg shadow-lg text-xs placeholder:font-medium;
+}
+.input-box label{
+    @apply  font-medium;
+}
+.genero-input label{
+    @apply font-medium;
+}
+.card{
+    @apply flex items-center justify-center text-center rounded-md cursor-pointer 
+     w-[280px] h-[450px] m-[10px] text-white font-bold text-2xl hover:translate-y-[-10px] duration-500;
+}
+.minicard{
+    @apply flex items-center justify-center text-center rounded-md cursor-pointer
+    bg-black w-[200px] h-[200px] m-[10px] text-white font-bold text-2xl hover:translate-y-[-10px] duration-500;
+}
+.item-nav-bar{
+    @apply pl-5;
+}
